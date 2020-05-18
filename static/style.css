@@ -1,0 +1,103 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: rgba(147,217,104,1);
+	background: -moz-linear-gradient(45deg, rgba(147,217,104,1) 0%, rgba(147,217,104,1) 3%, rgba(109,182,141,1) 51%, rgba(95,88,182,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(147,217,104,1)), color-stop(3%, rgba(147,217,104,1)), color-stop(51%, rgba(109,182,141,1)), color-stop(100%, rgba(95,88,182,1)));
+	background: -webkit-linear-gradient(45deg, rgba(147,217,104,1) 0%, rgba(147,217,104,1) 3%, rgba(109,182,141,1) 51%, rgba(95,88,182,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(147,217,104,1) 0%, rgba(147,217,104,1) 3%, rgba(109,182,141,1) 51%, rgba(95,88,182,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(147,217,104,1) 0%, rgba(147,217,104,1) 3%, rgba(109,182,141,1) 51%, rgba(95,88,182,1) 100%);
+	background: linear-gradient(45deg, rgba(147,217,104,1) 0%, rgba(147,217,104,1) 3%, rgba(109,182,141,1) 51%, rgba(95,88,182,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93d968', endColorstr='#5f58b6', GradientType=1 );
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.navbar-default {
+	background-color: rgba(255, 255, 255, 0.9);
+	border: none;
+}
+
+.form-group label {
+	color: rgb(102, 102, 102);
+}
+
+#main h1 {
+	font-family: 'Roboto', serif;
+	padding-top: 14%;
+	font-size: 6em;
+	color: white;
+}
+
+#main p {
+	color: rgb(230, 255, 255);
+	font-size: 1.8em;
+	font-family: 'Roboto', serif;
+}
+
+.row {
+	color: rgb(51, 51, 51);
+	margin-top: 5%;
+}
+
+#current .panel-heading {
+	font-size: 1.4em;
+}
+
+#current #temp {
+	font-size: 5em;
+}
+
+#forecast .table {
+	table-layout: fixed;
+}
+
+#forecast .table th {
+	text-align: center;
+}
+
+#forecast h4 a {
+	font-size: 1.65em;
+}
+
+.temp2 {
+	font-size: 3em;
+}	
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+/* jQuery UI customization */
+
+.ui-autocomplete { 
+	position: absolute; 
+	cursor: default;
+	max-height: 100px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+} 
+
+.ui-autocomplete-loading { 
+	background: url('loading.gif') right center no-repeat; 
+}
+
+
+/* css for small screens */
+
+@media only screen and (max-width: 768px) {
+	#main h1 {
+		font-size: 3.5em;
+	}
+
+	#main p {
+		font-size: 1.5em;
+		margin-bottom: 15%;
+	}
+}
